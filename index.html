@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Makan Sederhana</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0 0 15px 0;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            margin: 0 5px;
+            background-color: #2980b9;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            background-color: #1c5d8a;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        #jam {
+            font-size: 24px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .isi {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .isi h3 {
+            color: #3498db;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .isi p {
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .menu-favorit {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .menu-item {
+            flex: 1;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .menu-item h4 {
+            color: #2980b9;
+            margin-bottom: 8px;
+        }
+
+        .menu-item .harga {
+            font-size: 20px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-favorit {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Rumah Makan Sederhana</h1>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h2>Selamat Datang!</h2>
+        <p>Makanan enak, harga murah</p>
+        <div id="jam"></div>
+    </div>
+
+    <div class="isi">
+        <h3>Tentang Kami</h3>
+        <p>Rumah Makan Sederhana ini udah buka dari tahun 2015. Disini jual macam-macam makanan Indonesia yang enak dan harganya murah banget. Cocok buat anak kost, mahasiswa, atau pekerja yang mau makan enak tapi ga mau keluar duit banyak.</p>
+        
+        <p>Tempatnya bersih kok, terus masakannya juga pake bahan yang fresh. Chef nya udah pengalaman lama jadi masakannya dijamin enak.</p>
+
+        <h3>Buka Setiap Hari</h3>
+        <p>Senin - Jumat : 08.00 - 21.00</p>
+        <p>Sabtu - Minggu : 08.00 - 22.00</p>
+        <p>Bisa dine in, take away, atau pesan antar juga bisa.</p>
+
+        <h3>Kenapa Harus Makan Disini?</h3>
+        <p><strong>Murah Meriah</strong><br>
+        Harganya ramah di kantong. Paling mahal cuma 25 ribu udah kenyang.</p>
+        
+        <p><strong>Enak Bgt</strong><br>
+        Rasanya juara, banyak yang langganan terus disini.</p>
+        
+        <p><strong>Bersih</strong><br>
+        Tempatnya selalu dibersihkan jadi nyaman buat makan.</p>
+        
+        <p><strong>Cepet</strong><br>
+        Ga perlu nunggu lama, pesanan langsung diolah sama chef.</p>
+
+        <h3>Menu Paling Laku</h3>
+        <div class="menu-favorit">
+            <div class="menu-item">
+                <h4>Nasi Goreng Spesial</h4>
+                <p class="harga">Rp 15.000</p>
+                <p style="font-size:14px;">Pake telor, ayam suwir</p>
+            </div>
+            <div class="menu-item">
+                <h4>Ayam Bakar</h4>
+                <p class="harga">Rp 20.000</p>
+                <p style="font-size:14px;">Ayam bakar pake sambel</p>
+            </div>
+            <div class="menu-item">
+                <h4>Soto Ayam</h4>
+                <p class="harga">Rp 12.000</p>
+                <p style="font-size:14px;">Kuah kuning, enak banget</p>
+            </div>
+        </div>
+
+        <h3>Lokasi</h3>
+        <p>Jl. Makan Enak No. 45, Jakarta Pusat. Deket stasiun Gambir, gampang dicari kok. Ada parkiran juga.</p>
+    </div>
+
+    <div class="footer">
+        <p>Copyright Ray Winner Son Laia - NIM: 251011701203</p>
+        <p>Fakultas:Ilmu Komputer - Sistem Informasi</p>
+        <p>Jl. Makan Enak No. 45, Jakarta | Telp: (021) 1234-5678</p>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                timeZone: 'Asia/Jakarta'
+            };
+            
+            const dateString = now.toLocaleDateString('id-ID', options);
+            document.getElementById('jam').textContent = '🕐 ' + dateString + ' WIB';
+        }
+
+        updateDateTime();
+    
+        setInterval(updateDateTime, 1000);
+    </script>
+    
+</body>
+</html>
